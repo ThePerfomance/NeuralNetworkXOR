@@ -6,27 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Кнопка для запуска обучения -->
     <Button
         android:id="@+id/trainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Train Network"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="104dp"
+        android:text="Тренировка нейросети"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
 
-    <!-- Текстовое поле для вывода результатов -->
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Results will appear here"
+        android:layout_marginTop="220dp"
+        android:text="Результаты"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/trainButton"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabel" />
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:text="Нейронные сети. Решение практических задач. ПЗ №5. Задача с XOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

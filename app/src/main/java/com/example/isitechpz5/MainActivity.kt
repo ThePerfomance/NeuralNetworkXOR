@@ -8,7 +8,6 @@ import kotlin.math.exp
 
 class MainActivity : AppCompatActivity() {
 
-    // Класс нейронной сети
     class NeuralNetwork(
         private val inputSize: Int,
         private val hiddenSize: Int,
@@ -101,9 +100,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Инициализация сети с learning rate 0.5 и добавленными смещениями
         val nn = NeuralNetwork(2, 2, 1, 0.1)
-        // Корректные данные для XOR (без дубликатов)
+
         val trainingData = listOf(
             Pair(doubleArrayOf(1.0, 1.0), 0.0),
             Pair(doubleArrayOf(1.0, 0.0), 1.0),
